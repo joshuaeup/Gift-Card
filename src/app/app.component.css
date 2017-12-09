@@ -1,0 +1,9 @@
+.mainContainer {
+    height: 100vh;
+    overflow-y:hidden;
+}
+
+.gridContainer {
+    height: 100vh;
+    background: red;
+}
