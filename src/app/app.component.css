@@ -1,9 +1,15 @@
 
 
 .gridContainer {
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     height: 100vh;
     background: red;
+    padding-top:15vh;
+    padding-bottom: 20vh;
+}
+
+.title {
+    font-size: 10vh;
 }
 
 .cardImage {
