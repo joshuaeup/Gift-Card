@@ -4,9 +4,9 @@ import { FormsModule }          from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { AppComponent } from './components/Home/app.component';
+import { AppComponent } from './components/Main/app.component';
 import { About } from "./components/About/about";
-import { Home } from "./components/HomeOne/home";
+import { Home } from "./components/Home/home";
 
 const appRoutes: Routes = [
   { path: 'about', component: About },
