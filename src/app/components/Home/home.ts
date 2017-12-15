@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.css']
 })
 export class Home {
-  title = 'app';
 }
