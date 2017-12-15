@@ -1,0 +1,26 @@
+.mainContainer {
+    /* background: url("http://mikazahome.ca/wp-content/uploads/2015/08/gift-card-blank.jpg") no-repeat center center fixed; */
+    background: url("http://cdn.shopify.com/s/files/1/0151/7857/products/giftcardintensivenutrition2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: none;
+    padding-right: 5vh;
+    padding-top: 2vh;
+}
+
+.customForm {
+    height: 75vh;
+    width: 50vw;
+    background: #f2f2f2;
+    padding: 20vh 25vh 25vh 25vh;
+    border-radius: 2px;
+}
+
+
+
+.customBtn {
+    width: 50%;
+}

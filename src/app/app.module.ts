@@ -8,12 +8,14 @@ import { AppComponent } from './components/Main/app.component';
 import { Home } from "./components/Home/home";
 import { About } from "./components/About/about";
 import { LogIn } from "./components/Login/logIn";
+import { SignUp } from "./components/Signup/signUp";
 
 
 const appRoutes: Routes = [
   { path: 'home', component: Home },
   { path: 'about', component: About },
   { path: 'logIn', component: LogIn },
+  { path: 'signUp', component: SignUp },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AppComponent,
     Home,
     About,
-    LogIn
+    LogIn,
+    SignUp
     
   ],
   imports: [
