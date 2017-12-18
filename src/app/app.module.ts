@@ -9,6 +9,7 @@ import { Home } from "./components/Home/home";
 import { About } from "./components/About/about";
 import { LogIn } from "./components/Login/logIn";
 import { SignUp } from "./components/Signup/signUp";
+import { Grid } from "./components/Grid/grid";
 
 
 const appRoutes: Routes = [
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'about', component: About },
   { path: 'logIn', component: LogIn },
   { path: 'signUp', component: SignUp },
+  { path: 'grid', component: Grid },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     Home,
     About,
     LogIn,
-    SignUp
+    SignUp,
+    Grid
     
   ],
   imports: [
