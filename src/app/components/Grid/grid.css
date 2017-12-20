@@ -1,3 +1,8 @@
+.mainContainer {
+    background: red;
+    overflow: auto;
+}
+
 .customContainer {
     margin: 0px 5vh 0px 5vh;
     padding-top: 2vh;
@@ -6,7 +11,6 @@
 .customCarousel {
     padding-bottom: 2vh;
 }
-
 
 .customImg {
     height: 20vh;
@@ -22,4 +26,8 @@
 
 .cardsContainer {
     overflow: auto;
+}
+
+.customCard {
+    margin: 2vh;
 }
