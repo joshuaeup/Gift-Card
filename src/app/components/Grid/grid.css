@@ -1,5 +1,4 @@
 .customContainer {
-    /* box-shadow: solid 1px black; */
     margin: 0px 5vh 0px 5vh;
     padding-top: 2vh;
 }
@@ -10,9 +9,17 @@
 
 
 .customImg {
-    height: 30vh;
+    height: 20vh;
 }
 
 .customCol {
     padding: 1px;
+}
+
+.customBtn {
+    padding: 1vh;
+}
+
+.cardsContainer {
+    overflow: auto;
 }

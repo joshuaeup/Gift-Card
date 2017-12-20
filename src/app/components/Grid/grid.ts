@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
     selector: "grid",
@@ -6,7 +7,7 @@ import { Component } from "@angular/core";
     styleUrls: ["grid.css"],
 })
 
-export class Grid {
+export class Grid  {
     showAlert() {
         alert("Alert");
     }
