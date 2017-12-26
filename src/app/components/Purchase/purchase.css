@@ -52,8 +52,8 @@
   width: 100%;
 }
 
-#price {
-  font-size: 5vh;
+#priceContainer {
+    margin-top: 2vh;
 }
 
 .descriptionTitle {
@@ -79,5 +79,9 @@
 
   .descriptionTitle {
       margin-top: 3vh;
+  }
+
+  profileContainer {
+      display: none;
   }
 }
