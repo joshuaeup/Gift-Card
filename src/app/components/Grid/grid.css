@@ -1,6 +1,6 @@
 .mainContainer {
     background: red;
-    overflow: auto;
+    overflow-y: auto;
     
 }
 

@@ -6,7 +6,7 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
     /* padding-right: 5vh;
     padding-top: 10vh; */
 }

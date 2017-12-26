@@ -1,0 +1,83 @@
+.mainPurchaseContainer {
+  height: 100vh;
+  width: 100vw;
+  overflow: none;
+  /* height: 100vh; */
+}
+
+#profileImg {
+  height: 18vh;
+  /* width: 10vw; */
+  border-radius: 50%;
+}
+
+.customText {
+  font-size: 3vh;
+  margin-bottom: 0px;
+}
+
+#creationsContainer {
+  height: 10vh;
+  width: 10vh;
+}
+
+.creations {
+  border: solid black 1px;
+}
+
+.creations :hover {
+  border: solid blue 2px;
+}
+
+.creationImg {
+  height: 100%;
+  width: 100%;
+}
+
+.customCol {
+  padding: 0px 8vh 0px 8vh;
+  height: 90vh;
+}
+
+.customColumn {
+  margin-top: 15vh;
+}
+
+.cardContainer {
+  margin: 6vh 0px 10vh 0px;
+}
+
+#card {
+  height: 100%;
+  width: 100%;
+}
+
+#price {
+  font-size: 5vh;
+}
+
+.descriptionTitle {
+  margin-top: 8vh;
+  font-size: 4vh;
+}
+
+.descriptionContainer {
+  height: 60vh;
+  margin: 0px 8vh 8vh 8vh;
+  border: solid black 2px;
+  overflow: auto;
+}
+
+#customDescription {
+  font-size: 2vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainPurchaseContainer {
+    overflow-y: auto;
+  }
+
+  .descriptionTitle {
+      margin-top: 3vh;
+  }
+}

@@ -11,6 +11,7 @@ import { LogIn } from "./components/Login/logIn";
 import { SignUp } from "./components/Signup/signUp";
 import { Grid } from "./components/Grid/grid";
 import { Signing } from "./components/Signing/signing";
+import { Purchase } from "./components/Purchase/purchase";
 
 
 const appRoutes: Routes = [
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'signUp', component: SignUp },
   { path: 'grid', component: Grid },
   { path: 'signing/:id', component: Signing },
+  { path: 'purchase', component: Purchase },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -34,7 +36,9 @@ const appRoutes: Routes = [
     LogIn,
     SignUp,
     Grid,
-    Signing
+    Signing,
+    Purchase
+
     
   ],
   imports: [
