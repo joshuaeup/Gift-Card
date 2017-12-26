@@ -8,8 +8,4 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class Grid  {
-    showAlert() {
-        alert("Alert");
-    }
-    
 }

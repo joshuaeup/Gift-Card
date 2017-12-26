@@ -1,0 +1,50 @@
+.mainContainer {
+    height: 100vh;
+    background: linear-gradient(#ece168, #faee77);
+    padding: 2vh 0px 2vh 0px;
+    margin: 0px;
+}
+
+.cardContainer {
+    height: 70vh;
+    width: 35vw;
+}
+
+#card {
+    height: 100%;
+    width: 100%;
+}
+
+.customForm {
+    padding: 0px;
+    width: 25vw;
+}
+
+.textSize {
+    font-size: 2vh;
+}
+
+.title {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.fundBtn {
+    margin: 1vh 0px 1vh 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .mainContainer {
+        overflow: auto;
+    }
+
+    .customForm {
+        width: 100%;
+    }
+
+    .cardContainer {
+        width: 100%;
+    }
+    
+    
+}

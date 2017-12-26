@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'logIn', component: LogIn },
   { path: 'signUp', component: SignUp },
   { path: 'grid', component: Grid },
-  { path: 'signing', component: Signing },
+  { path: 'signing/:id', component: Signing },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
