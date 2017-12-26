@@ -39,12 +39,17 @@
   height: 90vh;
 }
 
+.cardCol {
+  padding: 0px 8vh 0px 8vh;
+  height: 85vh;
+}
+
 .customColumn {
   margin-top: 15vh;
 }
 
 .cardContainer {
-  margin: 6vh 0px 10vh 0px;
+  margin: 4vh 0px 10vh 0px;
 }
 
 #card {
@@ -53,7 +58,7 @@
 }
 
 #priceContainer {
-    margin-top: 2vh;
+  margin-top: 2vh;
 }
 
 .descriptionTitle {
@@ -78,10 +83,10 @@
   }
 
   .descriptionTitle {
-      margin-top: 3vh;
+    margin-top: 3vh;
   }
 
   profileContainer {
-      display: none;
+    display: none;
   }
 }
