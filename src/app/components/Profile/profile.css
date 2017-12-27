@@ -1,0 +1,27 @@
+#avatarImg {
+    height: 100%;
+    width: 100%;
+}
+
+.profileContainer {
+    /* padding-top: 3vh; */
+}
+
+#expContainer {
+    margin-top: 7vh;
+    height:10vh;
+    width: 7vw;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+
+#exp {
+    font-size: 7vh;
+}
+
+.viewGrid {
+    margin-top: 6vh;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
