@@ -10,7 +10,7 @@
 #expContainer {
     margin-top: 7vh;
     height:10vh;
-    width: 7vw;
+    width: 6vw;
     text-align: center;
     border: solid black 1px;
     border-radius: 50%;
@@ -38,4 +38,17 @@
     width: 10vw;
     border: solid black 2px;
     border-radius: 50%;
+}
+
+.dataContainer {
+    height: 55vh;
+    padding: 2vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+}
+
+.customCard {
+    margin: 2vh;
 }

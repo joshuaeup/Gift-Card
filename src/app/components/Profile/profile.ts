@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ["profile.css"]
 })
 
-export class Profile {}
+export class Profile {
+    
+}

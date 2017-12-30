@@ -27,7 +27,10 @@
 }
 
 .cardsContainer {
-    
+    padding: 4vh 7vh 7vh 7vh;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .customCard {
