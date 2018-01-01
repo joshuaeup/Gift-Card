@@ -8,18 +8,31 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item active d-flex align-items-center">
                     <a class="nav-link" routerLink="/home" routerLinkActive="active">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" routerLink="/grid" routerLinkActive="active">Grid</a>
                     </li>
-                <li class="nav-item">
+                <li class="nav-item d-flex align-items-center">
                     <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
                 </li>
             </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle profileBtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img id="profileIcon" class="rounded" src="http://images.all-free-download.com/images/graphiclarge/harry_potter_icon_6825007.jpg" alt="profileImg">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" routerLinkeActive="active" routerLink="/profile/:id">Your Profile</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Help</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+              </div>
+            
             <button class="btn btn-primary" routerLink="/logIn" routerLinkActive="active">
                 Account
             </button>
