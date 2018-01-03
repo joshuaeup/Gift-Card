@@ -1,5 +1,5 @@
 .mainContainer {
-    background: red;
+    background: rgb(228, 198, 146);
     overflow-y: auto;
     
 }
@@ -23,10 +23,13 @@
 }
 
 .customBtn {
+    background: #51BBFE;
     padding: 1vh;
 }
 
 .cardsContainer {
+    border-left: solid black 1px;
+    border-right: solid black 1px;
     padding: 4vh 7vh 7vh 7vh;
     height: 60vh;
     overflow-x: hidden;
