@@ -1,4 +1,5 @@
 .mainContainer {
+    height: auto;
     background: rgb(228, 198, 146);
     overflow-y: auto;
     
@@ -14,8 +15,13 @@
     padding-bottom: 2vh;
 }
 
+.customSlide {
+    width: 100vw;
+}
+
 .customImg {
-    height: 20vh;
+    /* height: 20vh; */
+    height: 10vh;
 }
 
 .customCol {
@@ -31,9 +37,9 @@
     border-left: solid black 1px;
     border-right: solid black 1px;
     padding: 4vh 7vh 7vh 7vh;
-    height: 60vh;
+    height: auto;
     overflow-x: hidden;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .customCard {

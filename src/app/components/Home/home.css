@@ -1,11 +1,12 @@
-
-
 .gridContainer {
     /* padding-bottom: 10vh; */
-    height: 100vh;
+    /* height: 100vh; */
+    /* height: 100%; */
+    /* flex: 1 1 auto; */
     background: darkorchid;
     padding-top:15vh;
     padding-bottom: 20vh;
+   
 }
 
 .title {

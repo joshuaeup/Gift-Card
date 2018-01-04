@@ -1,14 +1,18 @@
-.mainContainer {
+
+
+.box {
     height: 100vh;
-    overflow: hidden;
 }
 
 .profileBtn {
-    padding: 5%;
+  padding: 5%;
 }
 
 #profileIcon {
-    height: 5vh;
-    width: auto;
-    border-radius: 50%;
+  height: 5vh;
+  width: auto;
+  border-radius: 50%;
+}
+
+.footer {
 }
