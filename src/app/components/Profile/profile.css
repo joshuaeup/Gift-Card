@@ -1,5 +1,5 @@
 #avatarImg {
-  height: 100%;
+  height: 850px;
   width: 100%;
 }
 
@@ -61,12 +61,12 @@
 }
 
 .dataContainer {
-  height: 55vh;
+  margin-bottom: 3vh;
   padding: 2vh;
   overflow-x: hidden;
-  overflow-y: auto;
   border-left: solid black 1px;
   border-right: solid black 1px;
+  border-bottom: solid black 1px;
 }
 
 .customCard {
