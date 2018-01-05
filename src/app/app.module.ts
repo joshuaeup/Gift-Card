@@ -13,6 +13,7 @@ import { Grid } from "./components/Grid/grid";
 import { Signing } from "./components/Signing/signing";
 import { Purchase } from "./components/Purchase/purchase";
 import { Profile } from "./components/Profile/profile";
+import { Card } from "./components/Card/card";
 
 
 const appRoutes: Routes = [
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'signing/:id', component: Signing },
   { path: 'purchase', component: Purchase },
   { path: 'profile/:id', component: Profile },
+  { path: 'card/:id', component: Card },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     Grid,
     Signing,
     Purchase,
-    Profile
+    Profile,
+    Card
 
     
   ],
