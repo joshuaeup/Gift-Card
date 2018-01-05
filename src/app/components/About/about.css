@@ -1,6 +1,4 @@
 .mainContainer {
-  height: 100vh;
-  overflow-y: auto;
   background: linear-gradient(#ece168, #faee77);
   padding: 2vh 10% 10vh 10%;
 }
