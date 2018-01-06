@@ -1,0 +1,44 @@
+.parentContainer {
+  height: 100vh;
+  background: linear-gradient(#fac275, #f7bd6d);
+}
+
+.childContainer {
+  background-image: url("https://vignette.wikia.nocookie.net/survivor-org/images/2/22/Tumblr_mjz9j6xH2b1s5jjtzo1_500.png/revision/latest?cb=20151006065042");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  padding: 1vh 0px 1vh 0px;
+}
+
+.cardMainContainer {
+  height: 60vh;
+  width: 25vw;
+  border: solid black 2px;
+  padding: 0;
+}
+
+.title {
+  font-size: 8vh;
+  margin-bottom: 3vh;
+}
+
+.cardChildContainer {
+}
+
+.cardTest {
+  height: 100%;
+  width: 100%;
+}
+
+.btnContainer {
+  height: 10vh;
+  width: 20vw;
+}
+
+.openBtn {
+  font-size: 2vh;
+}
