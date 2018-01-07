@@ -14,6 +14,8 @@
   padding: 1vh 0px 1vh 0px;
 }
 
+
+
 .cardMainContainer {
   height: 60vh;
   width: 25vw;
@@ -30,9 +32,38 @@
 }
 
 .cardTest {
-  height: 100%;
-  width: 100%;
+  
 }
+
+
+.cardTest {
+    display: inline-block;
+    background-color: #aaaaaa;
+    height: 100%;
+  width: 100%;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: roll 4s infinite;
+  }
+  
+  
+  @keyframes roll {
+    0% {
+      /* transform: scaleX(0.9); */
+      width: 100%;
+    }
+    50% {
+      /* transform: scaleX(3); */
+      width: 0px;
+    }
+    100% {
+        width: -30px;
+    }
+  }
+
 
 .btnContainer {
   height: 10vh;
