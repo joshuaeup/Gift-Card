@@ -31,12 +31,13 @@
 }
 
 .testContainer {
-  background: url("http://laoblogger.com/images/11th-birthday-cake-clipart-5.jpg")
+  /* background: url("http://laoblogger.com/images/11th-birthday-cake-clipart-5.jpg")
     no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+  background: blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,18 +46,18 @@
   width: 100%;
   font-size: 1px;
   padding: 1px;
-  color: white;
   animation: flipLeft 10s infinite;
   transform-origin: left;
 }
 
 .testContainerTwo {
-  background: url("https://slm-assets2.secondlife.com/assets/11683448/lightbox/Birthday_cutout_7_Happy_Birthday_present.jpg?1432696408")
+  /* background: url("https://slm-assets2.secondlife.com/assets/11683448/lightbox/Birthday_cutout_7_Happy_Birthday_present.jpg?1432696408")
     no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+  background: red;
   position: absolute;
   top: 0;
   right: 0;
@@ -65,7 +66,6 @@
   width: 100%;
   font-size: 1px;
   padding: 1px;
-  color: white;
   animation: flipRight 10s infinite;
   transform-origin: right;
 }
@@ -78,9 +78,15 @@
 
 @keyframes flipLeft {
   0% {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: -40px 0px 18px #888888;
     width: 100%;
   }
   50% {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 18px #f7bd6d;
     transform-origin: left;
     animation-mode: forwards;
     transform: rotateY(-180deg);
@@ -91,9 +97,15 @@
 
 @keyframes flipRight {
   0% {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 40px 0px 18px #888888;
     width: 100%;
   }
   50% {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 18px #f7bd6d;
     transform-origin: right;
     animation-mode: forwards;
     transform: rotateY(180deg);
