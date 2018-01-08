@@ -14,13 +14,12 @@
   padding: 1vh 0px 1vh 0px;
 }
 
-
-
 .cardMainContainer {
+  position: relative;
   height: 60vh;
   width: 25vw;
   border: solid black 2px;
-  padding: 0;
+  padding: 0px;
 }
 
 .title {
@@ -31,39 +30,78 @@
 .cardChildContainer {
 }
 
-.cardTest {
-  
+.testContainer {
+  background: url("http://laoblogger.com/images/11th-birthday-cake-clipart-5.jpg")
+    no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 565px;
+  width: 100%;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  animation: flipLeft 10s infinite;
+  transform-origin: left;
 }
 
+.testContainerTwo {
+  background: url("https://slm-assets2.secondlife.com/assets/11683448/lightbox/Birthday_cutout_7_Happy_Birthday_present.jpg?1432696408")
+    no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 565px;
+  width: 100%;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  animation: flipRight 10s infinite;
+  transform-origin: right;
+}
 
 .cardTest {
-    display: inline-block;
-    background-color: #aaaaaa;
-    height: 100%;
+  height: 100%;
   width: 100%;
-    font-size: 1px;
-    padding: 1px;
-    color: white;
-    margin-right: 5px;
-    margin-left: 5px;
-    animation: roll 4s infinite;
-  }
-  
-  
-  @keyframes roll {
-    0% {
-      /* transform: scaleX(0.9); */
-      width: 100%;
-    }
-    50% {
-      /* transform: scaleX(3); */
-      width: 0px;
-    }
-    100% {
-        width: -30px;
-    }
-  }
+  background: white;
+}
 
+@keyframes flipLeft {
+  0% {
+    width: 100%;
+  }
+  50% {
+    transform-origin: left;
+    animation-mode: forwards;
+    transform: rotateY(-180deg);
+  }
+  100% {
+  }
+}
+
+@keyframes flipRight {
+  0% {
+    width: 100%;
+  }
+  50% {
+    transform-origin: right;
+    animation-mode: forwards;
+    transform: rotateY(180deg);
+  }
+  100% {
+   
+  }
+}
 
 .btnContainer {
   height: 10vh;

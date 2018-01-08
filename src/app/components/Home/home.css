@@ -3,7 +3,8 @@
     /* height: 100vh; */
     /* height: 100%; */
     /* flex: 1 1 auto; */
-    background: darkorchid;
+    /* background: darkorchid; */
+    background: linear-gradient(#fac275, #f7bd6d);
     padding-top:15vh;
     padding-bottom: 20vh;
    
