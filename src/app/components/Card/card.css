@@ -16,9 +16,10 @@
 
 .cardMainContainer {
   position: relative;
+  display: inline-block;
   height: 60vh;
-  width: 25vw;
-  border: solid black 2px;
+  width: auto;
+  /* border: solid black 2px; */
   padding: 0px;
 }
 
@@ -38,16 +39,16 @@
   -o-background-size: cover;
   background-size: cover; */
   background: blue;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
-  height: 565px;
-  width: 100%;
+  height: 569px;
+  width: 400px;
   font-size: 1px;
   padding: 1px;
   animation: flipLeft 10s infinite;
-  transform-origin: left;
+  transform-origin: right;
 }
 
 .testContainerTwo {
@@ -58,21 +59,21 @@
   -o-background-size: cover;
   background-size: cover; */
   background: red;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   display: inline-block;
-  height: 565px;
-  width: 100%;
+  height: 569px;
+  width: 400px;
   font-size: 1px;
   padding: 1px;
   animation: flipRight 10s infinite;
-  transform-origin: right;
+  transform-origin: left;
 }
 
 .cardTest {
   height: 100%;
-  width: 100%;
+  width: 400px;
   background: white;
 }
 
@@ -80,18 +81,20 @@
   0% {
     border: 1px solid;
     padding: 10px;
-    box-shadow: -40px 0px 18px #888888;
-    width: 100%;
+    /* box-shadow: 0px 0px 18px #f7bd6d; */
+    transform-origin: right;
+    animation-mode: forwards;
+    transform: rotateY(180deg);
+    
   }
   50% {
     border: 1px solid;
     padding: 10px;
-    box-shadow: 0px 0px 18px #f7bd6d;
-    transform-origin: left;
-    animation-mode: forwards;
-    transform: rotateY(-180deg);
+    box-shadow: -40px 0px 18px #888888;
   }
   100% {
+    box-shadow: 0px 0px 18px #888888;
+    
   }
 }
 
@@ -99,19 +102,18 @@
   0% {
     border: 1px solid;
     padding: 10px;
-    box-shadow: 40px 0px 18px #888888;
-    width: 100%;
+    /* box-shadow: 0px 0px 18px #f7bd6d; */
+    transform-origin: left;
+    animation-mode: forwards;
+    transform: rotateY(-180deg);
   }
   50% {
     border: 1px solid;
     padding: 10px;
-    box-shadow: 0px 0px 18px #f7bd6d;
-    transform-origin: right;
-    animation-mode: forwards;
-    transform: rotateY(180deg);
+    box-shadow: 40px 0px 18px #888888;
   }
   100% {
-   
+    box-shadow: 0px 0px 18px #888888;
   }
 }
 
