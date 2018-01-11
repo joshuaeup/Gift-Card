@@ -19,11 +19,10 @@
   display: inline-block;
   height: 60vh;
   width: auto;
-  /* border: solid black 2px; */
   padding: 0px;
 }
 
-.title {
+#title {
   font-size: 8vh;
   margin-bottom: 3vh;
 }
@@ -31,14 +30,8 @@
 .cardChildContainer {
 }
 
-.testContainer {
-  /* background: url("http://laoblogger.com/images/11th-birthday-cake-clipart-5.jpg")
-    no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-  background: blue;
+#signsContainer {
+  background: white;
   position: relative;
   top: 0;
   left: 0;
@@ -47,18 +40,18 @@
   width: 400px;
   font-size: 1px;
   padding: 1px;
-  animation: flipLeft 10s infinite;
+  /* transform-origin: right; */
   transform-origin: right;
+  animation-mode: forwards;
+  transform: rotateY(180deg);
 }
 
-.testContainerTwo {
-  /* background: url("https://slm-assets2.secondlife.com/assets/11683448/lightbox/Birthday_cutout_7_Happy_Birthday_present.jpg?1432696408")
-    no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-  background: red;
+.signsAnimation {
+  animation: flipLeft 10s infinite;
+}
+
+#giftContainer {
+  background: white;
   position: relative;
   top: 0;
   right: 0;
@@ -67,11 +60,17 @@
   width: 400px;
   font-size: 1px;
   padding: 1px;
-  animation: flipRight 10s infinite;
+  /* transform-origin: left; */
   transform-origin: left;
+  animation-mode: forwards;
+  transform: rotateY(-180deg);
 }
 
-.cardTest {
+.giftAnimation {
+  animation: flipRight 10s infinite;
+}
+
+#card {
   height: 100%;
   width: 400px;
   background: white;
@@ -79,40 +78,64 @@
 
 @keyframes flipLeft {
   0% {
+    color: transparent;
     border: 1px solid;
     padding: 10px;
-    /* box-shadow: 0px 0px 18px #f7bd6d; */
     transform-origin: right;
     animation-mode: forwards;
-    transform: rotateY(180deg);
-    
+    transform: rotateY(-180deg);
   }
-  50% {
-    border: 1px solid;
+  20% {
+    color: transparent;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+    box-shadow: -40px 0px 18px #888888;
+  }
+  35% {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
     padding: 10px;
     box-shadow: -40px 0px 18px #888888;
   }
   100% {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
     box-shadow: 0px 0px 18px #888888;
-    
   }
 }
 
 @keyframes flipRight {
   0% {
+    color: transparent;
     border: 1px solid;
     padding: 10px;
-    /* box-shadow: 0px 0px 18px #f7bd6d; */
     transform-origin: left;
     animation-mode: forwards;
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
   }
-  50% {
-    border: 1px solid;
+  20% {
+    color: transparent;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+    box-shadow: 40px 0px 18px #888888;
+  }
+  35% {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
     padding: 10px;
     box-shadow: 40px 0px 18px #888888;
   }
   100% {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
     box-shadow: 0px 0px 18px #888888;
   }
 }

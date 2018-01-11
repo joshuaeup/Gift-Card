@@ -6,4 +6,11 @@ import { Component } from "@angular/core";
     styleUrls: ["./card.css"]
 })
 
-export class Card {}
+export class Card {
+
+   
+    openCard() {
+        document.getElementById("signsContainer").classList.add("signsAnimation");
+        document.getElementById("giftContainer").classList.add("giftAnimation");
+    }
+}
