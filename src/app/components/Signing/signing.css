@@ -1,5 +1,6 @@
-.mainContainer {
-    height: 100vh;
+.signingContainer {
+    overflow-x: hidden;
+    height: auto;
     background: linear-gradient(#ece168, #faee77);
     padding: 2vh 0px 2vh 0px;
     margin: 0px;
@@ -10,9 +11,7 @@
     width: 35vw;
 }
 
-#card {
-    height: 100%;
-    width: 100%;
+#nameResult {
 }
 
 .customForm {
@@ -33,6 +32,7 @@
     margin: 1vh 0px 1vh 0px;
 }
 
+
 @media only screen and (max-width: 500px) {
     .mainContainer {
         overflow: auto;
@@ -48,3 +48,184 @@
     
     
 }
+
+
+
+
+
+
+
+
+.cardMainContainer {
+    position: relative;
+    display: inline-block;
+    height: 60vh;
+    width: 100vw;
+    padding: 0px;
+  }
+  
+  #signsContainer {
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 60vh;
+    width: 20vw;
+    font-size: 5vh;
+    padding: 1px;
+    /* transform-origin: right;
+    animation-mode: forwards; */
+  }
+  
+  .beforeSignsRotate {
+    color: transparent;
+    
+    transform: rotateY(180deg);
+  }
+  
+  .signsAnimation {
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+     -moz-animation-fill-mode:forwards; /*FF 5+*/
+     -o-animation-fill-mode:forwards; /*Not implemented yet*/
+     -ms-animation-fill-mode:forwards; /*IE 10+*/
+     animation-fill-mode:forwards; /*when the spec is finished*/
+    animation: flipLeft 5s forwards;
+    -webkit-animation: flipLeft 5s forwards; /* for less modern browsers */
+  }
+  
+  #giftContainer {
+    background: white;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 60vh;
+    width: 20vw;
+    font-size: 5vh;
+    padding: 1px;
+    /* transform-origin: left;
+    animation-mode: forwards; */
+  
+  }
+  
+  .beforeGiftRotate {
+    color: transparent;
+    transform: rotateY(-180deg);
+  
+  }
+  
+  .giftAnimation {
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+     -moz-animation-fill-mode:forwards; /*FF 5+*/
+     -o-animation-fill-mode:forwards; /*Not implemented yet*/
+     -ms-animation-fill-mode:forwards; /*IE 10+*/
+     animation-fill-mode:forwards; /*when the spec is finished*/
+    animation: flipRight 5s forwards;
+    -webkit-animation: flipRight 5s forwards; /* for less modern browsers */
+  }
+  
+  #card {
+    height: 60vh;
+    width: 20vw;
+    background: white;
+  }
+  
+  @keyframes flipLeft {
+    0% {
+      color: transparent;
+      border: 1px solid;
+      padding: 10px;
+      transform-origin: right;
+      animation-mode: forwards;
+      transform: rotateY(-180deg);
+    }
+    20% {
+      color: transparent;
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: -40px 0px 18px #888888;
+    }
+    35% {
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: -40px 0px 18px #888888;
+    }
+    100% {
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: 0px 0px 18px #888888;
+    }
+  }
+  
+  @keyframes flipRight {
+    0% {
+      color: transparent;
+      border: 1px solid;
+      padding: 10px;
+      transform-origin: left;
+      animation-mode: forwards;
+      transform: rotateY(180deg);
+    }
+    20% {
+      color: transparent;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: 40px 0px 18px #888888;
+    }
+    35% {
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: 40px 0px 18px #888888;
+    }
+    100% {
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+      box-shadow: 0px 0px 18px #888888;
+    }
+  }
+  
+  .btnContainer {
+    margin: 3vh;
+  font-size: 3vh;
+  }
+  
+  .openBtn {
+    font-size: 2vh;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .cardMainContainer {
+      width: 100vw;
+    }
+  
+    #signsContainer {
+      width: 35vw;
+    }
+  
+    #card {
+      width: 30vw;
+    }
+  
+    #giftContainer {
+      width: 35vw;
+    }
+  
+    .btnContainer {
+    }
+  
+    .openBtn {
+    }
+  }

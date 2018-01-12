@@ -1,42 +1,15 @@
-<!-- <div class="mainContainer d-flex justify-content-around">
-    <div class="cardContainer ">
-        <img id="card" src="https://asset.holidaycardsapp.com/assets/card/b_day232-0c7773e78281162c87acc5d49a60ed1b.png" alt="Preview of card">
-    </div>
-    <div>
-        <form class="customForm ">
-            <div class="form-group d-flex flex-column">
-                <h1 class="text-center title p-2">Created by</h1>
-                <h1 class="text-center title p-2">Name</h1>
-            </div>
-            <div class="form-group">
-                <label class="textSize">Name</label>
-                <input type="text" class="form-control" placeholder="John Doe">
-            </div>
-            <div class="form-group">
-                <label class="textSize">Font</label>
-                <select class="form-control">
-                    <option>Default select</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="textSize">Message</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary btn-lg btn-block customBtn">Sign</button>
-            </div>
-        </form>
-    </div>
-</div> -->
-
-<div class="mainContainer d-flex justify-content-between row">
+<div class="signingContainer d-flex justify-content-center row">
     <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
-        <div class="cardContainer ">
-            <img id="card" src="https://asset.holidaycardsapp.com/assets/card/b_day232-0c7773e78281162c87acc5d49a60ed1b.png" alt="Preview of card">
+        <div class="cardContainer d-flex justify-content-center flex-column">
+            <div class="p-2 d-flex justify-content-center">
+            <img id="nameResult" src="https://asset.holidaycardsapp.com/assets/card/b_day232-0c7773e78281162c87acc5d49a60ed1b.png" alt="Preview of card">
+        </div>
+        <div class="p-2">
             <button class="btn btn-success btn-lg btn-block fundBtn">
                 <i class="fa fa-gift" aria-hidden="true"></i> Fund
                 <i class="fa fa-gift" aria-hidden="true"></i>
             </button>
+        </div>
         </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center formCol">
@@ -64,6 +37,22 @@
                     <button class="btn btn-primary btn-lg btn-block customBtn">Sign</button>
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+            <h1 class="title">Preview</h1>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+            <div class="cardMainContainer d-flex justify-content-center">
+                <div id="signsContainer" class="beforeSignsRotate">
+                    <p>One</p>
+                </div>
+                <img id="card" alt="image of card" src="https://i.pinimg.com/originals/61/bb/c9/61bbc9c3e2abaf5c8dea976393fc1e13.png">
+                <div id="giftContainer" class="beforeGiftRotate">
+                    <p>Two</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
