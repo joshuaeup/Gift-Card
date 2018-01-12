@@ -36,9 +36,9 @@
   top: 0;
   left: 0;
   display: inline-block;
-  height: 569px;
-  width: 400px;
-  font-size: 1px;
+  height: 60vh;
+  width: 20vw;
+  font-size: 5vh;
   padding: 1px;
   transform-origin: right;
   animation-mode: forwards;
@@ -56,8 +56,8 @@
    -o-animation-fill-mode:forwards; /*Not implemented yet*/
    -ms-animation-fill-mode:forwards; /*IE 10+*/
    animation-fill-mode:forwards; /*when the spec is finished*/
-  animation: flipLeft 10s forwards;
-  -webkit-animation: flipLeft 10s forwards; /* for less modern browsers */
+  animation: flipLeft 5s forwards;
+  -webkit-animation: flipLeft 5s forwards; /* for less modern browsers */
 }
 
 #giftContainer {
@@ -66,9 +66,9 @@
   top: 0;
   right: 0;
   display: inline-block;
-  height: 569px;
-  width: 400px;
-  font-size: 1px;
+  height: 60vh;
+  width: 20vw;
+  font-size: 5vh;
   padding: 1px;
   transform-origin: left;
   animation-mode: forwards;
@@ -87,13 +87,13 @@
    -o-animation-fill-mode:forwards; /*Not implemented yet*/
    -ms-animation-fill-mode:forwards; /*IE 10+*/
    animation-fill-mode:forwards; /*when the spec is finished*/
-  animation: flipRight 10s forwards;
-  -webkit-animation: flipRight 10s forwards; /* for less modern browsers */
+  animation: flipRight 5s forwards;
+  -webkit-animation: flipRight 5s forwards; /* for less modern browsers */
 }
 
 #card {
-  height: 100%;
-  width: 400px;
+  height: 60vh;
+  width: 20vw;
   background: white;
 }
 
@@ -164,10 +164,34 @@
 }
 
 .btnContainer {
-  height: 10vh;
-  width: 20vw;
+  margin: 3vh;
+font-size: 3vh;
 }
 
 .openBtn {
   font-size: 2vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .cardMainContainer {
+    width: 100vw;
+  }
+
+  #signsContainer {
+    width: 35vw;
+  }
+
+  #card {
+    width: 30vw;
+  }
+
+  #giftContainer {
+    width: 35vw;
+  }
+
+  .btnContainer {
+  }
+
+  .openBtn {
+  }
 }
