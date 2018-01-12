@@ -40,14 +40,24 @@
   width: 400px;
   font-size: 1px;
   padding: 1px;
-  /* transform-origin: right; */
   transform-origin: right;
   animation-mode: forwards;
+}
+
+.beforeSignsRotate {
+  color: transparent;
+  
   transform: rotateY(180deg);
 }
 
 .signsAnimation {
-  animation: flipLeft 10s infinite;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+  animation: flipLeft 10s forwards;
+  -webkit-animation: flipLeft 10s forwards; /* for less modern browsers */
 }
 
 #giftContainer {
@@ -60,14 +70,25 @@
   width: 400px;
   font-size: 1px;
   padding: 1px;
-  /* transform-origin: left; */
   transform-origin: left;
   animation-mode: forwards;
+
+}
+
+.beforeGiftRotate {
+  color: transparent;
   transform: rotateY(-180deg);
+
 }
 
 .giftAnimation {
-  animation: flipRight 10s infinite;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+  animation: flipRight 10s forwards;
+  -webkit-animation: flipRight 10s forwards; /* for less modern browsers */
 }
 
 #card {
@@ -104,6 +125,7 @@
     border-top: 1px solid;
     border-left: 1px solid;
     border-bottom: 1px solid;
+    padding: 10px;
     box-shadow: 0px 0px 18px #888888;
   }
 }
@@ -136,6 +158,7 @@
     border-top: 1px solid;
     border-right: 1px solid;
     border-bottom: 1px solid;
+    padding: 10px;
     box-shadow: 0px 0px 18px #888888;
   }
 }
