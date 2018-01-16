@@ -1,9 +1,5 @@
 .gridContainer {
-    /* padding-bottom: 10vh; */
-    /* height: 100vh; */
-    /* height: 100%; */
-    /* flex: 1 1 auto; */
-    /* background: darkorchid; */
+    z-index: -1;
     background: linear-gradient(#fac275, #f7bd6d);
     padding-top:15vh;
     padding-bottom: 20vh;
@@ -11,6 +7,7 @@
 }
 
 .title {
+    z-index: 1;
     font-size: 10vh;
 }
 
@@ -19,10 +16,22 @@
 }
 
 .customCard {
+    z-index: 1;
     border: none;
     background: transparent;
     height: 40vh;
     width: 20vw;
+}
+
+.customCardTest {
+    /* z-index: 2; */
+    height: 40vh;
+    width: 20vw;
+}
+
+
+.customHover {
+    /* z-index: 1; */
 }
 
 .customHover :hover {
@@ -35,4 +44,52 @@
 
 .cardFont {
     text-align: center;
+}
+
+#oneContainer {
+    position: absolute;
+    top: 40vh;
+    left: 0px;
+    z-index: 2;
+    background: black;
+    border: black solid 2px;
+    animation: oneAnimation 10s infinite;
+    -webkit-animation: oneAnimation 10s infinite;
+}
+
+.firstAnimation {
+    /* animation: oneAnimation 10s infinite;
+    -webkit-animation: oneAnimation 10s infinite; */
+}
+
+@keyframes oneAnimation {
+    0% {
+        top: 27vh;
+        height: 40vh;
+        width:20vw;
+        background: black;
+        color: transparent;
+    }
+    25% {
+        top: 27vh;
+        height: 40vh;
+        width:100vw;
+        color: transparent;
+    }
+    50% {
+        top: 0vh;
+        height: 90vh;
+        width:100vw;
+    }
+    75% {
+        top: 0vh;
+        height: 90vh;
+        width:100vw;
+    }
+    100% {
+        width:100vw;
+        height: 90vh;
+        color:white;
+    }
+
 }
