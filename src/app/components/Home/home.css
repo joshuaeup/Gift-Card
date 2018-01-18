@@ -1,5 +1,6 @@
 .gridContainer {
-    z-index: -1;
+    position: relative;
+    /* z-index: -1; */
     background: linear-gradient(#fac275, #f7bd6d);
     padding-top:15vh;
     padding-bottom: 20vh;
@@ -23,16 +24,7 @@
     width: 20vw;
 }
 
-.customCardTest {
-    /* z-index: 2; */
-    height: 40vh;
-    width: 20vw;
-}
 
-
-.customHover {
-    /* z-index: 1; */
-}
 
 .customHover :hover {
     border: 1px solid gold;
@@ -47,14 +39,20 @@
 }
 
 #oneContainer {
+    background: url("https://cdn.ripple.com/wp-content/uploads/2017/07/shutterstock_368014496.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: absolute;
     top: 40vh;
     left: 0px;
     z-index: 2;
-    background: black;
     border: black solid 2px;
-    animation: oneAnimation 10s infinite;
-    -webkit-animation: oneAnimation 10s infinite;
+    animation: oneAnimation 3s forwards;
+    -webkit-animation: oneAnimation 3s forwards;
+    /* animation: oneAnimation 10s infinite;
+    -webkit-animation: oneAnimation 10s infinite; */
 }
 
 .firstAnimation {
@@ -66,8 +64,7 @@
     0% {
         top: 27vh;
         height: 40vh;
-        width:20vw;
-        background: black;
+        width:0px;
         color: transparent;
     }
     25% {
@@ -87,9 +84,15 @@
         width:100vw;
     }
     100% {
+        top: 0vh;
         width:100vw;
         height: 90vh;
         color:white;
     }
 
+}
+
+.titleFont {
+    font-weight: bold;
+    font-size: 10vh;
 }
